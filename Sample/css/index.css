@@ -1,0 +1,83 @@
+html, body, * {
+    height: 100%;
+    width: 100%;
+    font-family: "Microsoft Yahei";
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #dddddd;
+    border-bottom: 1px solid #aaaaaa;
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0 50px;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    width: 80px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.viewport {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.left-area {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    border-right: 1px solid #888888;
+}
+
+.left-area li {
+    display: block;
+    list-style: none;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+}
+
+.left-area li a {
+    display: block;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.center-area {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+}
