@@ -48,7 +48,7 @@ URL中，hash的分隔符，默认为#
 
 ### mapper
 hash与资源的映射，key为hash，值为对象
-```json
+```
 {
     url: html资源,
     controller: js资源
