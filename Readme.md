@@ -49,10 +49,14 @@ URL中，hash的分隔符，默认为#
 ### mapper
 hash与资源的映射，key为hash，值为对象
 ```
-{
+"hash名称": {
     url: html资源,
     controller: js资源
 }
+```
+同时，可以通过配置default属性，来配置默认加载页面
+```
+"default": "默认的hash名称"
 ```
 
 ### view
