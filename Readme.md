@@ -67,9 +67,11 @@ html dom的id
 
 ### listeners
 事件监听，包括以下事件
-onInit: function(Router) 初始化完成后触发
-beforeRouter: function(Router, hash) 路由跳转前触发
-afterRouter: function(Router) 路由跳转后触发
+```
+onInit: function(router) 初始化完成后触发
+beforeRouter: function(router, hash) 路由跳转前触发
+afterRouter: function(router) 路由跳转后触发
+```
 
 ## 方法
 ### go(hash)
