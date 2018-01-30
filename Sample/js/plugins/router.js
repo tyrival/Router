@@ -147,7 +147,9 @@ define(["jquery"], function ($) {
         // 如果未找到路由配置项，则跳转到该路由的默认页
         if (!page) {
             hash = mapper["default"];
-            location.hash = location.hash + me.hashKey + hash;
+            if (hash) {
+                location.hash = location.hash + me.hashKey + hash;
+            }
             return;
         }
         var url = page.url;
@@ -160,8 +162,13 @@ define(["jquery"], function ($) {
             dataType: 'html',
             success: function (data, status, xhr) {
                 $(view).html(data);
-                // 加载js
-                me.loadScript(controller, callback);
+                // 当前路由节点有controller属性时，加载controller
+                // 没有controller属性时，继续加载当前路由节点的子节点
+                if(controller){
+                    me.loadScript(controller, callback);
+                }else{
+                    typeof callback === 'function' && callback();
+                }
             },
             error: function (xhr, errorType, error) {
                 if ($(config.errorTemplateId).length === 0) {
