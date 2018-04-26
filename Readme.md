@@ -1,7 +1,7 @@
-Router.js
+# Router
 
 ## 概述
-Router.js是个前端路由插件，支持多级路由和路由中的数据缓存，依赖jQuery。
+Router是个前端路由插件，支持多级路由和路由中的数据缓存，依赖jQuery。
 
 ## 引入
 遵循AMD规范，需要用require引入，未支持UMD、CMD等，也不支持script标签引入，因为没时间，改起来也不复杂了，所以就这么着。
